@@ -17,4 +17,6 @@ echo "— 5 most recently modified directories with rwxrwxrwx —"
 ls -dlt */ | head -n 5
 echo
 echo "— Files in last 30-60 minutes"
-
+find ./ -cmin +25 -cmin -60 -type f
+echo
+printf '=' {1..70}
