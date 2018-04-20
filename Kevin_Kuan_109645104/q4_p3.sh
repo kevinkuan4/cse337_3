@@ -4,10 +4,10 @@
 # CSE337 
 # HW 3
 
-echo Enter a sentence please: 
+echo Enter a sentence: 
 read sentence
 
-words=$($sentence | wc -w)
-characters=$sentence | wc -m
-# printf "Words: " $sentence | wc -w
-echo words $sentence | wc -m
+echo -n "Amount of words: " 
+echo $sentence | wc -w
+echo -n "Amount of characters: "
+echo $sentence | wc -m
