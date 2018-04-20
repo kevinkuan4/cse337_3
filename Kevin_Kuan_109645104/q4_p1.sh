@@ -20,3 +20,4 @@ echo "— Files in last 30-60 minutes"
 find ./ -cmin +30 -cmin -60 -type f
 echo
 printf '=%.0s' {1..70}
+echo
